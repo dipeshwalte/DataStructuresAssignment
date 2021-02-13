@@ -46,6 +46,12 @@ namespace DataStructuresAssignment
             linkedListForBetweenDemo.Display();
             linkedListForBetweenDemo.DeleteNodeAtFirst();
             linkedListForBetweenDemo.Display();
+
+            //UC6
+            Console.WriteLine("Delete Last element demo");
+            linkedListForEndDemo.Display();
+            linkedListForEndDemo.DeleteNodeAtLast();
+            linkedListForEndDemo.Display();
         }
     }
 }

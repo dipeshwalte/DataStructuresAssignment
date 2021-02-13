@@ -93,6 +93,22 @@ namespace DataStructuresAssignment
 
             Console.WriteLine("Removed from linkedlist :" + temp.data);
         }
+
+        public void DeleteNodeAtLast()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("Nothing To Delete");
+                return;
+            }
+            Node temp = head;
+            while (temp.next.next != null)
+            {
+                temp = temp.next;
+            }
+            temp.next = null;
+        }
+
         public void Display()
         {
             if (head == null)
