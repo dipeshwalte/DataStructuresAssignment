@@ -40,6 +40,12 @@ namespace DataStructuresAssignment
             linkedListForBetweenDemo.AddNodeAtEnd(70);
             linkedListForBetweenDemo.AddNodeAfterNode(30,56);
             linkedListForBetweenDemo.Display();
+
+            //UC5
+            Console.WriteLine("Delete First element demo");
+            linkedListForBetweenDemo.Display();
+            linkedListForBetweenDemo.DeleteNodeAtFirst();
+            linkedListForBetweenDemo.Display();
         }
     }
 }

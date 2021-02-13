@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
-commitMessage="[Dipesh] modify addNodeAtEndLogic"
-currentBranchName="UC3AddNodeAtEnd"
-newBranchName="UC3AddNodeInBetween"
+commitMessage="[Dipesh] modify DeleteFirst"
+currentBranchName="UC5deleteFirst"
+newBranchName="UC6deleteLast"
 echo --------git status---------
 echo
 git status

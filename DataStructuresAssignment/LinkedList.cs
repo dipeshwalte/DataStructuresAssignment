@@ -80,6 +80,19 @@ namespace DataStructuresAssignment
             Console.WriteLine($"Added {nodeValue} at in between");
         }
 
+        public void DeleteNodeAtFirst()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("Nothing to delete");
+                return;
+            }
+
+            Node temp = this.head;
+            this.head = this.head.next;
+
+            Console.WriteLine("Removed from linkedlist :" + temp.data);
+        }
         public void Display()
         {
             if (head == null)
