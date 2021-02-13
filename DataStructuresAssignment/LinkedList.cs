@@ -24,6 +24,20 @@ namespace DataStructuresAssignment
             return count;
         }
 
+        public void AddNodeAtStart(int value)
+        {
+            Node newNode = new Node(value);
+            if (head == null)
+            {
+                head = newNode;
+            }
+            else
+            {
+                newNode.next = head;
+                head = newNode;
+            }
+            Console.WriteLine($"Added {value} at start of the linkedlist");
+        }
         public void Display()
         {
             if (head == null)
@@ -42,6 +56,7 @@ namespace DataStructuresAssignment
                 }
                 temp = temp.next;
             }
+            Console.WriteLine();
         
         }
     }

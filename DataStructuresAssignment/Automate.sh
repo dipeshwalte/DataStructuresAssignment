@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
-commitMessage="[Dipesh] modify addedNodeClass"
-currentBranchName="UC1SimpleLinkedList"
-newBranchName="UC2AddNode"
+commitMessage="[Dipesh] modify addNodeAtStartLogic"
+currentBranchName="UC2AddNode"
+newBranchName="UC3AddNodeAtEnd"
 echo --------git status---------
 echo
 git status
