@@ -16,6 +16,7 @@ namespace DataStructuresAssignment
             node30.next = node70;
             staticlinkedList.head = node56;
             staticlinkedList.Display();
+
             //UC2
             Console.WriteLine("Add Node At Start Demo");
             LinkedList linkedListForStartDemo = new LinkedList();
@@ -23,6 +24,15 @@ namespace DataStructuresAssignment
             linkedListForStartDemo.AddNodeAtStart(30);
             linkedListForStartDemo.AddNodeAtStart(56);
             linkedListForStartDemo.Display();
+
+            //UC3
+            Console.WriteLine("Add Node At End Demo");
+            LinkedList linkedListForEndDemo = new LinkedList();
+            linkedListForEndDemo.AddNodeAtEnd(56);
+            linkedListForEndDemo.AddNodeAtEnd(30);
+            linkedListForEndDemo.AddNodeAtEnd(70);
+            linkedListForEndDemo.Display();
+
 
         }
     }
