@@ -13,10 +13,7 @@ namespace DataStructuresAssignment
             Node temp = this.head;
             while (temp != null)
             {
-                //if (this.head.)
-                //{
-
-                //}
+                
                 Console.WriteLine();
             }
             return count;
