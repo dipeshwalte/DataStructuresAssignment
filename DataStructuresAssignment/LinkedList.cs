@@ -59,6 +59,27 @@ namespace DataStructuresAssignment
             Console.WriteLine($"Added {value} at end of the linkedlist");
         }
 
+        public void AddNodeAfterNode(int nodeValue,int addAfterThisValue)
+        {
+            Node newNode = new Node(nodeValue);
+            if (head == null)
+            {
+                head = newNode;
+            }
+            else
+            {
+                Node temp = head;
+                while (temp.data != addAfterThisValue)
+                {
+                    temp = temp.next;
+                }
+                newNode.next = temp.next;
+                temp.next = newNode;
+
+            }
+            Console.WriteLine($"Added {nodeValue} at in between");
+        }
+
         public void Display()
         {
             if (head == null)

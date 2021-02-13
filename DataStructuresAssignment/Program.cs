@@ -33,7 +33,13 @@ namespace DataStructuresAssignment
             linkedListForEndDemo.AddNodeAtEnd(70);
             linkedListForEndDemo.Display();
 
-
+            //UC4
+            Console.WriteLine("Add Node In Between End Demo ");
+            LinkedList linkedListForBetweenDemo = new LinkedList();
+            linkedListForBetweenDemo.AddNodeAtEnd(56);
+            linkedListForBetweenDemo.AddNodeAtEnd(70);
+            linkedListForBetweenDemo.AddNodeAfterNode(30,56);
+            linkedListForBetweenDemo.Display();
         }
     }
 }
