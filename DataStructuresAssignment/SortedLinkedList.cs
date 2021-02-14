@@ -25,9 +25,25 @@ namespace DataStructuresAssignment
                 newNode.next = head;
                 head = newNode;
             }
-            Console.WriteLine($"Added {value} at start of the linkedlist");
         }
+        public void AddNodeAtEnd(int value)
+        {
+            Node newNode = new Node(value);
+            if (head == null)
+            {
+                head = newNode;
+            }
+            else
+            {
+                Node temp = head;
+                while (temp.next != null)
+                {
+                    temp = temp.next;
+                }
+                temp.next = newNode;
 
+            }
+        }
         public void AddNode(int value)
         {
             Node newNode = new Node(value);
@@ -42,12 +58,24 @@ namespace DataStructuresAssignment
                 return;
             }
             Node temp = head;
-            while (temp.data < value)
+            while (temp.next.data < value)
             {
-            
-            
+                temp = temp.next;
+                if (temp.next == null)
+                {
+                    break;
+                }
             }
-
+            if (temp.next == null)
+            {
+                AddNodeAtEnd(value);
+            }
+            else
+            {
+                newNode.next = temp.next;
+                temp.next = newNode;
+            }
+            
         }
         public void AddNodeAfterNode(int nodeValue, int addAfterThisValue)
         {

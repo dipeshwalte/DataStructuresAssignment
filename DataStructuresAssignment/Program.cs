@@ -76,7 +76,14 @@ namespace DataStructuresAssignment
             linkedListForNodeAfterNode.DeleteNodeWithValue(40);
             linkedListForNodeAfterNode.Display();
 
-
+            //UC10
+            Console.WriteLine("Sorted linked list");
+            SortedLinkedList sortedLinkedList = new SortedLinkedList();
+            sortedLinkedList.AddNode(56);
+            sortedLinkedList.AddNode(30); 
+            sortedLinkedList.AddNode(40);
+            sortedLinkedList.AddNode(70);
+            sortedLinkedList.Display();
         }
     }
 }
