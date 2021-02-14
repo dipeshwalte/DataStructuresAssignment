@@ -19,7 +19,6 @@ namespace DataStructuresAssignment
             {
                 if (temp.data == value)
                 {
-                    Console.WriteLine("Data Found");
                     return true;
                 }
                 temp = temp.next;

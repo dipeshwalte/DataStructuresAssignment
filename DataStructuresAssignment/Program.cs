@@ -60,7 +60,16 @@ namespace DataStructuresAssignment
             {
                 Console.WriteLine("Node found");
             }
-            
+
+            //UC8
+            Console.WriteLine("Add Node After Node ");
+            LinkedList linkedListForNodeAfterNode = new LinkedList();
+            linkedListForNodeAfterNode.AddNodeAtEnd(56);
+            linkedListForNodeAfterNode.AddNodeAtEnd(30);
+            linkedListForNodeAfterNode.AddNodeAtEnd(70);
+            linkedListForNodeAfterNode.AddNodeAfterNode(40, 30);
+            linkedListForNodeAfterNode.Display();
+
         }
     }
 }
