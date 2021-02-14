@@ -52,6 +52,15 @@ namespace DataStructuresAssignment
             linkedListForEndDemo.Display();
             linkedListForEndDemo.DeleteNodeAtLast();
             linkedListForEndDemo.Display();
+
+            //UC7
+            Console.WriteLine("Search for Node 30");
+            staticlinkedList.Display();
+            if (staticlinkedList.Search(30))
+            {
+                Console.WriteLine("Node found");
+            }
+            
         }
     }
 }

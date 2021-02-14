@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DataStructuresAssignment
 {
-    class LinkedList
+    public class LinkedList
     {
         public Node head;
 
@@ -12,16 +12,19 @@ namespace DataStructuresAssignment
         {
             head = null;
         }
-        public int Search(int value)
+        public bool Search(int value)
         {
-            int count = 0;
             Node temp = this.head;
             while (temp != null)
             {
-                
-                Console.WriteLine();
+                if (temp.data == value)
+                {
+                    Console.WriteLine("Data Found");
+                    return true;
+                }
+                temp = temp.next;
             }
-            return count;
+            return false;
         }
 
         public void AddNodeAtStart(int value)
