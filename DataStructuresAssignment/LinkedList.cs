@@ -111,6 +111,34 @@ namespace DataStructuresAssignment
             temp.next = null;
         }
 
+        public void DeleteNodeWithValue(int value)
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Nothing to delete");
+            }
+            Node prev = this.head;
+            Node pointsToValue = this.head;
+            while (pointsToValue.data != value)
+            {
+                if (pointsToValue == null)
+                {
+                    break;
+                }
+                pointsToValue = pointsToValue.next;
+            }
+            while (prev.next.data != value)
+            {
+                if (prev == null)
+                {
+                    break;
+                }
+                prev = prev.next;
+            }
+            prev.next = pointsToValue.next;
+
+        }
+
         public void Display()
         {
             if (head == null)

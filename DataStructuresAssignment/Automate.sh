@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 commitMessage="[Dipesh] modify DeleteLast"
-currentBranchName="UC8insertNodeAfterNode"
-newBranchName="UC9deleteFromMiddle"
+currentBranchName="UC9deleteFromMiddle"
+newBranchName="UC10sortWhileAdd"
 echo --------git status---------
 echo
 git status

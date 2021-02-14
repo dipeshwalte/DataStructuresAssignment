@@ -70,6 +70,13 @@ namespace DataStructuresAssignment
             linkedListForNodeAfterNode.AddNodeAfterNode(40, 30);
             linkedListForNodeAfterNode.Display();
 
+            //UC9
+            Console.WriteLine("Delete From Middle");
+            linkedListForNodeAfterNode.Display();
+            linkedListForNodeAfterNode.DeleteNodeWithValue(40);
+            linkedListForNodeAfterNode.Display();
+
+
         }
     }
 }
